@@ -30,3 +30,6 @@ migrate_working_dir/
 build/
 .idea
 /.flutter-plugins
+/.fvm/flutter_sdk
+/.fvm/fvm_config.json
+/.vscode/settings.json

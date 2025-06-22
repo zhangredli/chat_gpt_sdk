@@ -149,7 +149,7 @@ class ChatCompleteText {
   /// in the content of message. This option is currently not available on
   /// the gpt-4-vision-preview model.
   /// [logprobs]
-  final bool logprobs;
+  final bool? logprobs;
 
   ///An integer between 0 and 5 specifying the number of most
   /// likely tokens to return at each token position,
