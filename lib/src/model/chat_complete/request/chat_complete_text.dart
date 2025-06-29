@@ -171,6 +171,8 @@ class ChatCompleteText {
   ///to monitor and detect abuse.[user]
   final String? user;
 
+  final Map<String, dynamic>? thinking;
+
   ChatCompleteText({
     required this.model,
     required this.messages,
@@ -192,6 +194,7 @@ class ChatCompleteText {
     this.seed,
     this.tools,
     this.toolChoice,
+    this.thinking,
   });
 
   Map<String, dynamic> toJson() {
@@ -215,6 +218,7 @@ class ChatCompleteText {
       "seed": seed,
       "tool_choice": toolChoice,
       "tools": tools,
+      "thinking": thinking
     })
       ..removeWhere((key, value) => value == null);
 
